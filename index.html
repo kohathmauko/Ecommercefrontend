@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pixel Visuals Website Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section>
+  <div class="circle"></div>
+  <header>
+   <a href="#" class="logo"><img src="logo.png"></a>
+    <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Menu</a></li>
+     <li><a href="#">What's New</a></li>
+     <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <div class="content">
+  	<div class="textBx">
+  		<h2>It's not just Shoes<br><marquee>It's <span>Pixel Visuals</span></marquee></h2>
+  		<p>Pixel Visuals does filming of local dramas, TV commercials, series, video coverage and photography for functions like Introduction (Kuhinjira), Wedding, Memory lanes , Anniversaries,  graduation parties, memory lanes, profiles, music videos, birthdays, promotions videos, adverts, official and cooperate functions. We also write scripts, help in concept development, documentaries shoots.</p>
+  		<a href="#">Learn More</a>
+  	</div>
+  		<div class="imgBox">
+  	<img src="img1.jpg" class="pixelvisuals">
+  	<div class="prc">UGX 75,000</div>
+   </div>
+  </div>
+  <ul class="thumb">
+  	<li><img src="thumb1.jpg" onclick="imgSlider('img1.png');changeCircleColor('purple')"><div class="prc">UGX 50,000</div></li>
+  	<li><img src="thumb2.jpg" onclick="imgSlider('img2.png');changeCircleColor('orange')"><div class="prc">UGX 45,000</div></li>
+  	<li><img src="thumb3.jpg" onclick="imgSlider('img3.png');changeCircleColor('green')"><div class="prc">UGX 35,000</div></li>
+  </ul>
+  <ul class="sci">
+    <li><a href="#"><img src="x.png" width="50" height="50"></a></li>
+    <li><a href="#"><img src="l.png" width="50" height="50"></a></li>
+    <li><a href="#"><img src="z.png" width="50" height="50"></a></li>
+  </ul>
+ </section>
+
+ <script type="text/javascript">
+   function imgSlider(anything){
+    document.querySelector('.pixelvisuals').src * anything;
+   }
+
+   function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+   }
+ </script>
+</body>
+</html>
+
